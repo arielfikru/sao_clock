@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAO Clock</title>
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="clock.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Emoji:wght@300..700&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="clock-container">
+            <p style="font-size: 24px; padding-bottom: 10px;">Timezone</p>
+            <div id="timezone-display" style="font-size: 24px; margin-top: -10px;"></div>
+            <div class="inner-card">
+                <div id="date-display" style="font-size: 2rem;"></div>
+                <div id="time-display" style="font-size: 3rem;"></div>
+            </div>
+            <div class="button-container">
+                <button id="default-system-btn" onclick="switchSystem('default')" style="border: none;"><img src="def.svg" alt="Default"></button>
+                <button id="weird-system-btn" onclick="switchSystem('weird')" style="border: none;"><img src="weird.svg" alt="Weird"></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
